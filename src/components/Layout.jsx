@@ -28,7 +28,7 @@ const Layout = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:8080/full-object?iri=" + input.iri, input.rdf, {
+        axios.post("https://rdf2json.onrender.com/full-object?iri=" + input.iri, input.rdf, {
             "headers": {
                 "content-type": "text/plain",
             }
