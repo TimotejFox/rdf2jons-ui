@@ -6,11 +6,7 @@ function App() {
     return (
         <Container
             className="p-3">
-            < Container
-                className="p-5 mb-4 bg-light rounded-3">
-                <h1 className="header"> Welcome To RDF2JSON-OM</h1>
-                <Layout/>
-            </Container>
+            <Layout/>
         </Container>
     )
 }

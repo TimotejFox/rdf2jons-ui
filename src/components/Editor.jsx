@@ -21,13 +21,15 @@ export default function JsonEditor({value = {}, onChange}) {
         }
     };
 
-    return <Editor
-        ref={setRef}
-        value={value}
-        history
-        onChange={onChange}
-        mode="tree"
-        ace={ace}
-        theme="ace/theme/github"
-    />;
+    return <div className="editor">
+        <Editor
+            ref={setRef}
+            value={value}
+            history
+            onChange={onChange}
+            mode="tree"
+            ace={ace}
+            theme="ace/theme/github"
+        />
+    </div>;
 }
